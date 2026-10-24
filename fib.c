@@ -4,7 +4,9 @@ int fib(int n) {
     return fib(n - 1) + fib(n - 2);
 }
 int main() {
-    int n = 10;
+    int n;
+    printf("Enter n: ");
+    scanf("%d", &n);
     printf("fib(%d) = %d\n", n, fib(n));
     return 0;
 }
